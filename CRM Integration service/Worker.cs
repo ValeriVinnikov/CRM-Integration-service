@@ -70,6 +70,8 @@ namespace CRM_Integration_service
       _adminPassword = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("AppSettings")["O2GAdminPassword"];
       _usersFileName = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("AppSettings")["UsersFileName"];
       _crmUrl = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("AppSettings")["CrmUrl"];
+      _aPiuserPwd = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("AppSettings")["APIuserPwd"];
+      _aPiuser = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("AppSettings")["APIuser"];
     }
 
     /// <summary>
